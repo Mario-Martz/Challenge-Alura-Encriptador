@@ -1,0 +1,276 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: #E5E5E5;
+}
+
+body {
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Logo */
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 8%;
+}
+
+/* Main content */
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Input textarea */
+.entrada-texto {
+    width: 100%;
+    max-width: 686px;
+    resize: none;
+    margin-top: 90px;
+    padding: 15px;
+    height: 400px;
+    color: darkblue;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.entrada-texto::placeholder {
+    color: darkblue;
+}
+
+.entrada-texto:focus {
+    outline: none;
+}
+
+/* Output textarea */
+.salida-texto {
+    width: 100%;
+    max-width: 686px;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    height: 612px;
+    color: darkblue;
+    background: white url('../img/notexto.png') no-repeat center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.salida-texto:focus {
+    outline: none;
+}
+
+/* Restriction message */
+.restriccion {
+    color: grey;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+button {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.encriptar {
+    color: #D8DFE8;
+    background: darkblue;
+    border: 1px solid darkblue;
+    height: 67px;
+    width: 328px;
+}
+
+.desencriptar {
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid darkblue;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover {
+    background: #555;
+    color: white;
+}
+
+/* Dynamic section */
+.dinamico {
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    position: relative;
+    text-align: center;
+}
+
+.texto1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+}
+
+.texto2 {
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+}
+
+.copiar {
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 120px;
+}
+
+/* Notification */
+.anuncio {
+    display: none;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: darkblue;
+    padding: 15px;
+}
+
+.copyright {
+    color: #D8DFE8;
+    background: transparent;
+    font-size: 15px;
+    margin: 10px;
+}
+
+/* Responsive styles */
+/* Laptop */
+@media screen and (max-width: 1366px) {
+    main {
+        margin-left: 0px;
+    }
+    .entrada-texto {
+        margin-top: 50px;
+    }
+    .salida-texto {
+        height: 550px;
+    }
+    .dinamico {
+        margin-top: -160px;
+    }
+    .copiar {
+        margin-top: 60px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 15%;
+        margin-top: 40px;
+    }
+    main {
+        display: block;
+        margin: 0px 30px;
+    }
+    .entrada-texto {
+        margin-top: 60px;
+        height: 700px;
+    }
+    .salida-texto {
+        margin: 40px 0px;
+        height: 300px;
+        background: white;
+    }
+    .dinamico {
+        margin-top: -250px;
+        margin-left: 0px;
+    }
+    .texto1 {
+        margin-bottom: 0.5em;
+    }
+    .copiar {
+        margin-top: 100px;
+    }
+    .anuncio {
+        margin-left: 70px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+    .logo {
+        margin-top: 30px;
+        width: 30%;
+    }
+    main {
+        margin: 0 10px;
+    }
+    .entrada-texto {
+        margin-top: 20px;
+        height: 340px;
+    }
+    .botones {
+        display: block;
+        margin-top: 0px;
+    }
+    .encriptar, .desencriptar {
+        width: 100%;
+    }
+    .desencriptar {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .salida-texto, .dinamico, .copiar {
+        width: 100%;
+    }
+    .salida-texto {
+        padding: 10px;
+        padding-bottom: 120px;
+        height: 180px;
+    }
+    .anuncio {
+        width: 100%;
+        margin-left: 0;
+    }
+}
