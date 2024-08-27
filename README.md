@@ -1,6 +1,6 @@
 # Mi Proyecto
 
-Este es el archivo README para mi proyecto. Aquí pongo la vista final y un video de su funcionamiento
+Este es el archivo README para mi proyecto. Aquí pongo la vista final
 
 ## Imágenes
 
