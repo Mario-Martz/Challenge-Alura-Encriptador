@@ -1,6 +1,6 @@
 # Mi Proyecto
 
-Este es el archivo README para mi proyecto. Aquí se muestran ejemplos de cómo agregar imágenes y videos.
+Este es el archivo README para mi proyecto. Aquí pongo la vista final y un video de su funcionamiento
 
 ## Imágenes
 
